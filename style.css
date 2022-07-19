@@ -1,0 +1,127 @@
+  /* div{
+    background-color: rgb(173, 247, 62);
+    width: 500px;
+    padding:10px;
+    margin: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow:0 0 20px black
+} */
+
+
+/* p{
+    border:2px solid black
+}   */
+/*------------------------------------------------------------------ */
+
+/* #container {
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+   flex-flow: row wrap;
+}  */
+
+ /* .item {
+  background: linear-gradient(45deg, rgb(238, 35, 35),rgb(105, 219, 105));
+  width: 100px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  border-radius:10px;
+  color: aqua;;
+}   */
+ /* ------------------------------------------------------------------  */
+ /* body{
+    margin: 0;
+    padding: 0;
+    font-family: arial,sans-serif;
+    font-size: 22px;
+    background-color: grey;
+    text-align: center;
+    height:100vh;
+
+} */
+
+.layout-container{
+    display: flex;
+    flex-direction:column;
+    height: 100vh;
+}
+
+.flx-header{
+    padding:30px;
+    background-color:blue
+}
+
+.flx-main-container{
+    display: flex;
+    flex:1;
+} 
+ .flx-nav,.flx-aside{
+    background-color:brown;
+    flex:1;
+   padding:30px
+}
+.flx-article-section{
+    background-color:white;
+    padding:10px;
+    flex:5
+
+}
+
+.flx-footer{
+    background: black;
+    color:white;
+    padding:10px;
+} 
+
+/* by doing above process we cannot make page responsive to make page responsive we use media query */
+/* @media all and (max-width:500px){
+.flx-main-container{
+    flex-direction: column;
+}
+} */
+
+
+
+/* ------------------------------------------------------- */
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.dropdown_button{
+    background-color: rgb(154, 212, 66);
+    color:black;
+    border:none;
+    outline:none;
+    font-size: 30px;
+    cursor:pointer;
+    padding:14px 16px;
+    box-shadow:0 0 30px 1px rgb(68, 68, 235)
+}
+
+.dropdown_list{
+    background-color: rgb(154, 212, 66);
+    width:200px;
+    box-shadow:0 0 30px 1px rgb(240, 176, 176);
+    display:none;
+    position:absolute;
+}
+.dropdown_list a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:20px;
+    font-size:15px;
+}
+
+.dropdown_list a:hover{
+    background-color:rgb(48, 27, 27)
+}
+
+/* for dropdown Effect */
+
+.dropdown:hover .dropdown_list{
+    display:block
+}
